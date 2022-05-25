@@ -211,7 +211,7 @@ article img
 
 aside
 {
-    flex: 1;
+    
     position: relative;
     background-color:white;
     box-shadow: 0px 2px 5px #1c1a19;
@@ -239,7 +239,8 @@ aside img
 {
     margin-right: 5px;
     color: white;
-    width: 400PX;
+    width: 100PX;
+	text-align: center;
 
 
 }
