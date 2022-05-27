@@ -1,4 +1,6 @@
-/* Eléments principaux de la page */
+/*********/
+/*GENERAL*/
+/*********/
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -31,7 +33,7 @@ h2 {
 	width: 100%;
 	max-width: 1400px;
 	padding: 0 25px;
-	margin-top: 40px;
+	
 }
 
 /*Colors*/
@@ -114,6 +116,67 @@ h2 {
 }
 
 
+
+
+/******/
+/*Main*/
+/******/
+
+main {
+	background-color: var(--main-color);
+}
+
+/*items*/
+.items {
+	margin-bottom: 135px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.items a {
+	width: 21%;
+	text-decoration: none;
+	color: unset;
+}
+.items a:hover article {
+	box-shadow: rgba(42, 18, 206, 0.9) 0 0 22px 6px;
+}
+.items article {
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	width: 100%;
+	border-radius: 10px;
+}
+.items article img {
+	width: 220px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.items article h3 {
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+.items article p {
+	text-align: center;
+	padding-left: 23px;
+	padding-right: 23px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	white-space: normal;
+}
+
 /* Corps */
 
 section
@@ -121,7 +184,7 @@ section
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #181818;
+    
 
 }
 
@@ -141,22 +204,22 @@ article
 article img
 {
     font-size: 1em;
-    width: 390px;
-    height: 410px;
+    width: 370px;
+    height: 200px;
 
 }
 
 aside
 {
-    flex: 1;
+    
     position: relative;
-    background-color: #706b64;
+    background-color:white;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 15px;
-    color: white;
+    color:black;
     font-size: 1em;
-    margin-right: 10px;
+    
 }
 
 
@@ -176,12 +239,11 @@ aside img
 {
     margin-right: 5px;
     color: white;
-    width: 400PX;
+    width: 100PX;
+	text-align: center;
 
 
 }
-
-
 
 
 /********/
