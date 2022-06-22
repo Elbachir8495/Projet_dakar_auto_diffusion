@@ -9,75 +9,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <!-- Messenger Plugin de discussion Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de discussion code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101133175967945");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header>
       <div class="limitedWidthBlockContainer informations">
         <div class="limitedWidthBlock">
           <ul>
-            <li><img src="icons/phone.svg" alt="logo de téléphone" class="informations__phone">(00221)775600000</li>
-            <li><img src="icons/mail.svg" alt="logo d'une enveloppe" class="informations__mail">contact@dakar-autodiffusion.com</li>
-            <li><img src="icons/adress.svg" alt="logo d'un point de géolocalisation" class="informations__address">Dakar Sénégal</li>
+          <a href="00221774153801"> <li><img src="phone.svg" alt="logo de téléphone" class="informations__phone">(00221)774153801</li></a>
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk"><li><img src="mail.svg" alt="logo d'une enveloppe" class="informations__mail">contact@dakar-autodiffusion.com</li></a>
+          <a href="" > <li><img src="adress.svg" alt="logo d'un point de géolocalisation" class="informations__address">Dakar Sénégal</li></a>
           </ul>
         </div>
       </div>
       <div class="limitedWidthBlockContainer menu">
         <div class="limitedWidthBlock">
-          <a href="./index.html">
-            <img class="logo" src="image/logo.PNG" alt="Logo de l'entreprise">
+          <a href="index.html">
+            <img class="logo" src="logo.PNG" alt="Logo de l'entreprise">
           </a>
           <nav>
             <ul>
-              <a href="./index.html"><li>Accueil</li></a>
-              <a href="./propos.html"><li>A Propos</li></a>
-             
+              <a href="index.html"><li>Accueil</li></a>
+              <a href="propos.html"><li>Qui Sommes Nous</li></a>
+              
+              
             </ul>
           </nav>
         </div>
       </div>
-      <img class="banniere" src="image/banniere1.jpg" alt="Baniere">
+      <img class="banniere" src="banniere1.jpg" alt="Baniere">
     </header>
     
 
     <main class="limitedWidthBlockContainer">
     
       <div class="limitedWidthBlock">
-        <section>
-          <article>
+        <section class="corps">
+          <article class="corp_article">
+            <a href="paiement.html">
             <h3>Mode de paiement</h3>
             <p>Lorsque vous choisissez un véhicule sur notre catalogue ou suite à une demande spécifique
               et le prix convenu...</p>
     
-              <img src="image/logo.PNG" alt="plateau_de_repas">
-    
-            
+              <img src="creditauto.jpeg" alt="plateau_de_repas">
+            </a>
           </article>
-          <article>
+          <article class="corp_article">
+            <a href="transport.html">
             <h3> Mode de transport </h3>
             <p>il existe deux types de transport international maritime de véhicules, <br>pour le Sénégal à savoir...
 
               </p>
-            <img src="image/fret.jpg" alt="plateau_de_repas">
-            
+            <img src="vessel.jpg" alt="plateau_de_repas">
+          </a>
           </article>
           
             <aside>
           <h3>Actualités Dakar Auto Diffusion </h3>
-          <img src="image/lamine.jpeg" alt="photo_ouverture">
+          <img src="5008.jpg" alt="photo_ouverture">
+          <img src="cooper.jpg" alt="photo_ouverture">
+          <img src="renaultespace.jpg" alt="photo_ouverture">
+          <img src="kangoo.jpg" alt="photo_ouverture">
+          
           <p>
             Nous sommes spécialisés dans l'import de véhicules depuis l'Asie et l'Europe vers le Sénégal avec
 une prestation de bout en bout et une approche très orientée vers la satisfaction de nos clients. 
 Nous comptons être votre interlocuteur privilégié durant tout le processus d'importation du chargement au dédouanement de votre véhicule au Sénégal.
           </p>
         <p>
-          <a href="" title="cliquez ici" target="blank"><img src="image/facebook.png" alt="photo_facebook" > </a>
-          <a href="" target="blank">  <img src="image/instagram.jpeg" alt="photo_instagram"> </a>
-          <a href=""><img src="image/youtube.png" alt="photo_youtube"></a>
+          <a href="https://business.facebook.com/commerce/2161364384023009/shops/1834299200097650?business_id=687955175836218" title="cliquez ici" target="blank"><img src="facebook.png" alt="photo_facebook" > </a>
+          <a href="" target="blank">  <img src="instagram.jpeg" alt="photo_instagram"> </a>
+          <a href=""><img src="youtube.png" alt="photo_youtube"></a>
         </p>
     
         </aside>
@@ -90,57 +126,92 @@ Nous comptons être votre interlocuteur privilégié durant tout le processus d'
         </div>
         
         <section class="items" id="items"> 
-          <a href="./product.html?id=42">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
             <article>
-              <img src="image/foto1.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
-              <h3 class="productName">Auto</h3>
-              <p class="productDescription">Dis enim malesuada .</p>
+              <img src="kiak5.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+              <h3 class="productName">Kia K5</h3>
+              
             </article>
           </a> 
-          <a href="./product.html?id=42">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
             <article>
-              <img src="image/foto2.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
-              <h3 class="productName">Auto</h3>
-              <p class="productDescription">Dis enim malesuada .</p>
+              <img src="phase2.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+              <h3 class="productName">Peugeot 508 </h3>
+              
             </article>
           </a> 
-          <a href="./product.html?id=42">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
             <article>
-              <img src="image/foto3.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
-              <h3 class="productName">Auto</h3>
-              <p class="productDescription">Dis enim malesuada .</p>
+              <img src="mercedes.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+              <h3 class="productName">Mercedes classe M</h3>
+              
             </article>
           </a> 
-          <a href="./product.html?id=42">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
             <article>
-              <img src="image/foto4.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
-              <h3 class="productName">Auto</h3>
-              <p class="productDescription">Dis enim malesuada .</p>
+              <img src="BMW X5.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+              <h3 class="productName">BMW X5</h3>
+             
             </article>
           </a> 
+
+        </a> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
+          <article>
+            <img src="hyundaisanta.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+            <h3 class="productName">Hyundai Santa fe</h3>
+            
+          </article>
+        </a> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
+          <article>
+            <img src="c4cactus.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+            <h3 class="productName">Citroen C4 Cactus</h3>
+            
+          </article>
+        </a> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
+          <article>
+            <img src="sprinter.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+            <h3 class="productName">Mercedes Sprinter</h3>
+            
+          </article>
+        </a> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScekXTiHV8rdGyTVhVFvu_uqwZJcCuBKADThhkSK3ssXPgP1Q/viewform?usp=pp_url&entry.1000057=Oui,+je+suis+d%C3%A9j%C3%A0+client.&entry.1000027=KIA+K5&entry.967112212=Noire&entry.2055232012=12+&entry.1000020=diallo&entry.1000022=778858213&entry.1000025=bassirou84@gmail.com&entry.1000026=Adresse+e-mail&entry.1000023=bhjjkklk" target="_blank">
+          <article>
+            <img src="talisman.jpg" alt="Lorem ipsum dolor sit amet, Kanap name1">
+            <h3 class="productName">Renault talisman</h3>
+            
+          </article>
+        </a> 
           
         </section>
-        <section>
-          <article>
-            <h3>Nos Partenaires </h3>
+        <section class="corps">
+          <article class="corp_article">
+            <a href="https://businessnewsafrica.net/senegal-les-vehicules-americains-boostent-le-marche-de-lautomobile/">
+            <h3>Les voitures Américaines boostent le marché </h3>
+           
             <p></p>
     
-              <img src="image/bateau.jpg" alt="plateau_de_repas">
-    
+              <img src="autousa.jpeg" alt="plateau_de_repas">
+              
+            </a>
             
           </article>
-          <article>
-            <h3> Marché automobile au Sénégal</h3>
-            <p>  </p>
-            <img src="image/fret.jpg" alt="plateau_de_repas">
+          <article class="corp_article">
             
+            <a href="http://www.dakar-echo.com/les-assurances-senegalaises-ont-pese-175320-milliards-de-fcfa-en-2018/">   <h3> Secteur assurance automobile au Sénégal</h3>
+            <p>  </p>
+            <img src="assurance.jpeg" alt="plateau_de_repas">
+            </a>
           </article>
         </article>
-        <article>
-          <h3>Actualités au Sénégal </h3>
+        <article class="corp_article">
+          <a href="https://investinsenegal.com/">
+          <h3>Investir au Sénégal</h3>
           <p>   </p>
-          <img src="image/fret.jpg" alt="plateau_de_repas">
-          
+          <img src="apix.jpeg" alt="plateau_de_repas">
+        </a>
         </article>
           
             
@@ -156,7 +227,7 @@ Nous comptons être votre interlocuteur privilégié durant tout le processus d'
       <div class="limitedWidthBlockContainer footerMain">
         <div class="limitedWidthBlock">
           <div>
-            <img class="logo" src="image/logo.PNG" alt="Logo de l'entreprise">
+            <img class="logo" src="logo.PNG" alt="Logo de l'entreprise">
           </div>
           <div>
             <p>Dakar Cité keur Gorgui <br>Dakar Sénégal</p>
